@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import  { SocialIcon }  from 'react-social-icons';
+import Rotation from 'react-rotation'
 
 export default function NavBar() {
   return(
@@ -10,9 +11,8 @@ export default function NavBar() {
           <NavLink to="/"
           exact
           activeClassName="text-white"
-          className="inflex-flex items-center py-6 px-3 mr-4 text-rd-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
-
-          ><img src="./logo192.png" alt="anhict" width="85px"/>AnhICT</NavLink>
+          className="inflex-flex items-center py-6 px-3 mr-4 text-rd-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest">
+          <Rotation><img src="./logo192.png" alt="anhict" width="12px"/></Rotation>AnhICT</NavLink>
           <NavLink to="/post"
               className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
               activeClassName="text-red-100 bg-red-700">
